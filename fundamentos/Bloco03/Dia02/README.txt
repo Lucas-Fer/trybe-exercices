@@ -1,4 +1,4 @@
-Código modificando em CSS tamanho, cor de fundo com classe, entre outros.
+Código modificando em CSS: tamanho, cor de fundo com classe, entre outros.
 
 Primeiro exercício:
 1 - Modifique o tamanho do h1 para 65 pixels
