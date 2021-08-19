@@ -5,13 +5,35 @@
     <title>HTML</title>
 
     <style>
+        body{
+            font-size: 16px;
+        }
         h1{
+            text-align: center;
             font-size: 21px;
             background-color: orange;
+            font-family: sans-serif;
         }
+        
 
         ul{
+            font-style: italic;
+            line-height: 50px;
             background-color: palevioletred;
+        }
+        p{
+            font-weight:600;
+            font-size: 3em;
+        }
+
+        #CorAmarelo{
+            background-color: yellow;
+        }
+        #CorVermelho{
+            background-color: red;
+        }
+        #CorMarrom{
+            background-color: brown;
         }
 
         .cor_P_UL{
@@ -21,13 +43,13 @@
   </head>
   <body>
     <h1>Exercícios 3.2</h1>
-    
+
     <p class="cor_P_UL">Qual é a sua cor favorita?</p>
 
-    <ul class="cor_P_UL">
-      <li>Roxo</li>
-      <li>Vermelho</li>
-      <li>Vinho</li>
+    <ul>
+      <li id='CorAmarelo'>Amarelo</li>
+      <li id='CorVermelho'>Vermelho</li>
+      <li id='CorMarrom'>Marrom</li>
     </ul>
 
   </body>
