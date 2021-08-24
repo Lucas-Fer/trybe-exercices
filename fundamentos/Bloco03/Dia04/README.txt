@@ -5,3 +5,4 @@ Entender a diferença entre elementos de bloco e elementos inline .
 
 Exercício:
 
+Aplicar o HTML semanticamente e definir um layout similar à imagem referência.
