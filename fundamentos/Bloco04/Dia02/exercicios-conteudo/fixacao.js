@@ -1,4 +1,4 @@
-let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
+/*let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
 let indexOfPortfolio = menu.indexOf('Portfólio') ;
 let menuServices = menu[1];
 menu.push('Contato');
@@ -7,3 +7,10 @@ menu.push('Contato');
 console.log(menuServices);
 console.log("O índice de Portfólio é: " + indexOfPortfolio);
 console.log(menu);
+*/
+
+let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
+
+for(let indice = 0; indice < groceryList.length; indice += 1){
+  console.log(groceryList[indice]);
+}
