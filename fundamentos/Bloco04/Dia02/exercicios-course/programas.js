@@ -118,7 +118,8 @@ for(let numInicial = 1; numInicial <= 25; numInicial += 1){
 console.log(array);
 -------------------------------*/
 
-
+/*
+EXERCICIO 8
 let array = [];
 
 for(let numInicial = 1; numInicial <= 25; numInicial += 1)
@@ -133,3 +134,4 @@ console.log(array);
 for(let indice = 0; indice < array.length; indice += 1){
   console.log("|" + array[indice]/2);
 }
+---------------------*/
