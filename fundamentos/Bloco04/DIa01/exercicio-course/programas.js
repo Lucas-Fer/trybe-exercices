@@ -167,7 +167,7 @@ else{
   console.log("Parâmetro inválido");
 }*/
 
-
+/*
 const num1 = 7;
 const num2 = 7;
 const num3 = 7;
@@ -181,6 +181,22 @@ if((num1 || num2 || num3) % 2 === 0){
 else{
   console.log(false);
   console.log("Todos os números são ímpar");
+}
+*/
+
+const num1 = 4;
+const num2 = 4;
+const num3 = 4;
+
+
+if((num1 || num2 || num3) % 2 != 0){
+  console.log(true);
+  console.log("Um dos números é ímpar");
+} 
+
+else{
+  console.log(false);
+  console.log("Todos os números são pares");
 }
 
 
