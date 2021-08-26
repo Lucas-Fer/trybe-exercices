@@ -1,4 +1,4 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
 
 /*exercicio 1
 console.log(numbers);
@@ -67,6 +67,8 @@ console.log("O maior valor é de: " + maiorValor);
 
 */
 /*
+
+EXERCICIO 6
 contadorImpar = 0;
 contadorPar = 0;
 
@@ -87,8 +89,11 @@ if (contadorImpar > 0){
 }
 else{
   console.log("Não há números ímpar");
+-----------------------------
 }*/
 
+/*
+EXERCICIO 7
 menorValor = 10;
 //definir o menorValor com um numero maior que 0
 for(let indice = 0; indice < numbers.length; indice += 1){
@@ -96,10 +101,16 @@ for(let indice = 0; indice < numbers.length; indice += 1){
   if(numbers[indice] < menorValor)
 
   menorValor = numbers[indice];
-    
+--------------------    
 }
 
-console.log("O menor valor é de: " + menorValor);
+console.log("O menor valor é de: " + menorValor);*/
 
+let array = [];
 
+for(let numInicial = 1; numInicial <= 25; numInicial += 1){
+  array.push(numInicial);
+}
+
+console.log(array);
 

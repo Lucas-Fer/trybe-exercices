@@ -15,6 +15,6 @@ A média aritmética é o resultado da soma de todos os elementos divido pelo n�
 
 7 - Utilizando for , descubra qual o menor valor contido no array e imprima-o;
 
-9 - Utilizando for , crie um array que vá de 1 até 25 e imprima o resultado;
+8 - Utilizando for , crie um array que vá de 1 até 25 e imprima o resultado;
 
-10 - Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2 .
+9 - Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2 .
