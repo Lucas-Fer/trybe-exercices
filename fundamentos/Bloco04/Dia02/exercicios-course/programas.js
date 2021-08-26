@@ -101,11 +101,14 @@ for(let indice = 0; indice < numbers.length; indice += 1){
   if(numbers[indice] < menorValor)
 
   menorValor = numbers[indice];
---------------------    
+  
 }
 
-console.log("O menor valor é de: " + menorValor);*/
+console.log("O menor valor é de: " + menorValor);
+--------------------  */
 
+/*
+EXERCICIO 8
 let array = [];
 
 for(let numInicial = 1; numInicial <= 25; numInicial += 1){
@@ -113,4 +116,20 @@ for(let numInicial = 1; numInicial <= 25; numInicial += 1){
 }
 
 console.log(array);
+-------------------------------*/
 
+
+let array = [];
+
+for(let numInicial = 1; numInicial <= 25; numInicial += 1)
+{
+  array.push(numInicial);
+  
+  
+}
+console.log(array);
+
+
+for(let indice = 0; indice < array.length; indice += 1){
+  console.log("|" + array[indice]/2);
+}
