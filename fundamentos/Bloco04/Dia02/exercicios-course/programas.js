@@ -66,7 +66,7 @@ for(let indice = 0; indice < numbers.length; indice += 1){
 console.log("O maior valor é de: " + maiorValor);
 
 */
-
+/*
 contadorImpar = 0;
 contadorPar = 0;
 
@@ -87,7 +87,19 @@ if (contadorImpar > 0){
 }
 else{
   console.log("Não há números ímpar");
+}*/
+
+menorValor = 10;
+//definir o menorValor com um numero maior que 0
+for(let indice = 0; indice < numbers.length; indice += 1){
+  //se o valor do indice atual for maior que maiorValor (que é 0)
+  if(numbers[indice] < menorValor)
+
+  menorValor = numbers[indice];
+    
 }
+
+console.log("O menor valor é de: " + menorValor);
 
 
 
