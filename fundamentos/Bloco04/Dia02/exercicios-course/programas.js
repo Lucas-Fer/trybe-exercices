@@ -5,6 +5,10 @@ soma = 0;
 for(contador = 0; contador < numbers.length; contador += 1){
   //aqui será armazenado a soma
   soma = soma + numbers[contador];
+  
 
 }
+
+mediaAritmetica = soma/contador;
 console.log(soma);
+console.log(mediaAritmetica);
