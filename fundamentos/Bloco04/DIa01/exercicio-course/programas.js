@@ -71,3 +71,22 @@ else{
   console.log("zero");
 }*/
 
+const primeiroAngulo = 60;
+const segundoAngulo = 60;
+const terceiroAngulo = 50;
+
+let angulosInternos = 180;
+let somaAngulosInternos = primeiroAngulo + segundoAngulo + terceiroAngulo;
+
+if(primeiroAngulo && segundoAngulo && terceiroAngulo < 0){
+  console.log("Não pode valor negativo");
+}
+else if(somaAngulosInternos == angulosInternos){
+  console.log(true);
+}
+
+else{
+    console.log(false);
+
+}
+
