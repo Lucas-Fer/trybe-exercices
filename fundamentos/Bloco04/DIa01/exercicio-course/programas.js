@@ -130,6 +130,7 @@ switch(pecaXadrez){
     console.log("Parâmetros incorretos");
 }*/
 
+/*
 let nota = 101;
 
 if(nota >= 90 && nota <= 100){
@@ -164,5 +165,25 @@ else if (nota >= 0 && nota < 50){
 
 else{
   console.log("Parâmetro inválido");
+}*/
+
+
+const num1 = 7;
+const num2 = 7;
+const num3 = 7;
+
+
+if((num1 || num2 || num3) % 2 === 0){
+  console.log(true);
+  console.log("Um dos números é par");
+} 
+
+else{
+  console.log(false);
+  console.log("Todos os números são ímpar");
 }
+
+
+
+
 
