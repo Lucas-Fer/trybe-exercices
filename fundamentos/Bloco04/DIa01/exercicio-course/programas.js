@@ -37,7 +37,7 @@ else{
   console.log("Ambos o valores são os mesmos.");
 }
 */
-
+/*
 const num1 = 50;
 const num2 = 50;
 const num3 = 50;
@@ -55,4 +55,18 @@ else if(num3 > num1 && num3 > num2){
 }
 else{
   console.log("Os 3 valore são equivalentes!");
+}*/
+
+const valor = 0;
+
+if(valor > 0){
+  console.log("positive");
+}
+
+else if(valor < 0){
+  console.log("negative");
+}
+
+else{
+  console.log("zero");
 }
