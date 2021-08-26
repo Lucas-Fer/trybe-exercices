@@ -1,3 +1,4 @@
+/*
 const a = 5;
 const b = 5;
 
@@ -15,3 +16,19 @@ console.log("A divisão dos valores é de: " + divisao);
 
 let modulo = a % b;
 console.log("O módulo dos valores é de: " + modulo);
+*/
+
+const primeiroValor = 5;
+const segundoValor = 5;
+
+if(primeiroValor > segundoValor){
+  console.log("O primeiro valor atribuído é maior que o segundo.");
+}
+
+else if(primeiroValor < segundoValor){
+  console.log("O primeiro valor é menor que o segundo.");
+}
+
+else{
+  console.log("Ambos o valores são os mesmos.");
+}
