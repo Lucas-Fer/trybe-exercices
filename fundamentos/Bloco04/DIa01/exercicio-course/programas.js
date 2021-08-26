@@ -1,4 +1,6 @@
 /*
+EXERCÍCIO 1 - 
+
 const a = 5;
 const b = 5;
 
@@ -18,6 +20,8 @@ let modulo = a % b;
 console.log("O módulo dos valores é de: " + modulo);
 */
 
+/*
+EXERCÍCIO 2 -
 const primeiroValor = 5;
 const segundoValor = 5;
 
@@ -31,4 +35,24 @@ else if(primeiroValor < segundoValor){
 
 else{
   console.log("Ambos o valores são os mesmos.");
+}
+*/
+
+const num1 = 50;
+const num2 = 50;
+const num3 = 50;
+
+if(num1 > num2 && num1 > num3){
+  console.log("O num1 é o maior!");
+}
+
+else if(num2 > num1 && num2 > num3){
+  console.log("O num2 é o maior!");
+}
+
+else if(num3 > num1 && num3 > num2){
+  console.log("O num3 é o maior!");
+}
+else{
+  console.log("Os 3 valore são equivalentes!");
 }
