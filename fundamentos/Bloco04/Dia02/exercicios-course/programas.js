@@ -66,3 +66,28 @@ for(let indice = 0; indice < numbers.length; indice += 1){
 console.log("O maior valor é de: " + maiorValor);
 
 */
+
+contadorImpar = 0;
+contadorPar = 0;
+
+for(let indice = 0; indice < numbers.length; indice += 1){
+  if(numbers[indice] % 2 != 0){
+      contadorImpar += 1; 
+  }
+  else{
+    contadorPar += 1;
+  }
+ 
+
+}
+
+if (contadorImpar > 0){
+  console.log("Tem: " + contadorImpar + " números ímpares");
+  console.log("Tem: " + contadorPar + " números pares");
+}
+else{
+  console.log("Não há números ímpar");
+}
+
+
+
