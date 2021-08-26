@@ -183,7 +183,7 @@ else{
   console.log("Todos os números são ímpar");
 }
 */
-
+/*
 const num1 = 4;
 const num2 = 4;
 const num3 = 4;
@@ -198,7 +198,29 @@ else{
   console.log(false);
   console.log("Todos os números são pares");
 }
+*/
 
+const custoProduto = 10;
+const custoVendaProduto = -20;
+
+let quantidade = 1000;
+
+let custoProdTotal = custoProduto * quantidade;
+let custoVendaProdTotal = custoVendaProduto * quantidade;
+let imposto = 20; 
+
+if(custoProduto && custoVendaProduto < 0){
+  console.log("O valor de entrada não pode ser negativo");
+}
+
+else{
+  let impostoProd = ((custoProdTotal * imposto) / 100);
+  let custoCompraTotal = custoProdTotal + impostoProd;
+  
+  let lucroTotal = custoVendaProdTotal - custoCompraTotal;
+  console.log("O lucro foi de: " + lucroTotal);
+  
+}
 
 
 
