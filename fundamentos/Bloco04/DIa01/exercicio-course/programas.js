@@ -130,6 +130,7 @@ switch(pecaXadrez){
     console.log("Parâmetros incorretos");
 }*/
 
+/*
 let nota = 101;
 
 if(nota >= 90 && nota <= 100){
@@ -164,5 +165,121 @@ else if (nota >= 0 && nota < 50){
 
 else{
   console.log("Parâmetro inválido");
+}*/
+
+/*
+const num1 = 7;
+const num2 = 7;
+const num3 = 7;
+
+
+if((num1 || num2 || num3) % 2 === 0){
+  console.log(true);
+  console.log("Um dos números é par");
+} 
+
+else{
+  console.log(false);
+  console.log("Todos os números são ímpar");
 }
+*/
+/*
+const num1 = 4;
+const num2 = 4;
+const num3 = 4;
+
+
+if((num1 || num2 || num3) % 2 != 0){
+  console.log(true);
+  console.log("Um dos números é ímpar");
+} 
+
+else{
+  console.log(false);
+  console.log("Todos os números são pares");
+}
+*/
+/*
+const custoProduto = 10;
+const custoVendaProduto = -20;
+
+let quantidade = 1000;
+
+let custoProdTotal = custoProduto * quantidade;
+let custoVendaProdTotal = custoVendaProduto * quantidade;
+let imposto = 20; 
+
+if(custoProduto && custoVendaProduto < 0){
+  console.log("O valor de entrada não pode ser negativo");
+}
+
+else{
+  let impostoProd = ((custoProdTotal * imposto) / 100);
+  let custoCompraTotal = custoProdTotal + impostoProd;
+  
+  let lucroTotal = custoVendaProdTotal - custoCompraTotal;
+  console.log("O lucro foi de: " + lucroTotal);
+  
+}*/
+
+let salarioBruto = 3000;
+
+//INSS
+if(salarioBruto <= 1556.94){
+  INSS = ((salarioBruto * 8) / 100);
+  console.log("Sua aliquota de 8% é no valor de: " + INSS);
+  salarioBase = salarioBruto - INSS;
+  console.log("Seu salário base é de: " + salarioBase);
+}
+
+else if(salarioBruto >= 1556.95 && salarioBruto <= 2594.92){
+  INSS = ((salarioBruto * 9) / 100);
+  console.log("Sua aliquota de 9% é no valor de: " + INSS);
+  salarioBase = salarioBruto - INSS;
+  console.log("Seu salário base é de: " + salarioBase);
+}
+
+else if(salarioBruto >= 2594.93 && salarioBruto <= 5189.82){
+  INSS = ((salarioBruto * 11) / 100);
+  console.log("Sua aliquota de 11% é no valor de: " + INSS);
+  salarioBase = salarioBruto - INSS;
+  console.log("Seu salário base é de: " + salarioBase);
+}
+else{
+  salarioBase = salarioBruto - 570.88;
+  console.log("Seu salário base é de " + salarioBase);
+}
+
+// IR (Imposto de Renda)
+if(salarioBase <= 1903.98){
+  console.log("Isento do posto de renda");
+}
+else if(salarioBase >= 1903.99 && salarioBase <= 2826.65){
+  console.log("Alíquota de 7,5% e parcela de 142.80");
+  salarioLiquido = ((7.5 * salarioBase) / 100) - 142.80;
+  console.log("Seu salário líquido é de: " + salarioLiquido);
+}
+
+else if(salarioBase >= 2826.66 && salarioBase <= 3751.05){
+  console.log("Alíquota de 15% e parcela de 354.80");
+  salarioLiquido = ((15 * salarioBase) / 100) - 354.80;
+  console.log("Seu salário líquido é de: " + salarioLiquido);
+}
+
+else if(salarioBase >= 3751.06 && salarioBase <= 4664.68){
+  console.log("Alíquota de 22.5% e parcela de 636.13");
+  salarioLiquido = ((22.5 * salarioBase) / 100) - 636.13;
+  console.log("Seu salário líquido é de: " + salarioLiquido);
+}
+
+else{
+  console.log("Alíquota de 27% e parcela de 869.36");
+  salarioLiquido = ((27 * salarioBase) / 100) - 869.36;
+  console.log("Seu salário líquido é de: " + salarioLiquido);
+}
+
+
+
+
+
 
