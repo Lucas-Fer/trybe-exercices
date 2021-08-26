@@ -71,6 +71,7 @@ else{
   console.log("zero");
 }*/
 
+/*
 const primeiroAngulo = 60;
 const segundoAngulo = 60;
 const terceiroAngulo = 50;
@@ -88,5 +89,45 @@ else if(somaAngulosInternos == angulosInternos){
 else{
     console.log(false);
 
+}*/
+
+let pecaXadrez = "rEI";
+
+//imprime o valor em minúsculo
+console.log(pecaXadrez.toLowerCase());
+
+//define que a variável pecaXadrez vai passar a receber o valor da pecaXadrez em minúsculo.
+pecaXadrez = pecaXadrez.toLowerCase();
+
+//aqui já vai ta recebendo em minúsculo
+switch(pecaXadrez){
+  case 'rainha':
+    console.log("Movimento livre no tabuleiro");
+    break;
+
+  case 'rei':
+    console.log("Movimenta livre, apenas uma casa");
+    break;
+
+  case 'cavalo':
+    console.log("Movimenta em L");
+    break;
+
+  case 'bispo':
+    console.log(
+      "Movimenta diagonal");
+    break;
+  case 'peão':
+    console.log("Movimenta uma casa");
+    break;
+
+  case 'torre':
+    console.log("Movimenta reto");
+    break;
+    
+  default:
+    console.log("Parâmetros incorretos");
 }
+
+
 
