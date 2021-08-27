@@ -135,3 +135,23 @@ for(let indice = 0; indice < array.length; indice += 1){
   console.log("|" + array[indice]/2);
 }
 ---------------------*/
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let numbers2 = [];
+
+/*
+
+//ordem crescente
+numbers.sort((a,b) => a -b);
+
+//ordem decrescente
+numbers.sort((a,b) => b - a);
+*/
+
+//exercício 3
+
+for (let i = 0; i < numbers.length - 1; i += 1){
+  numbers2.push(numbers[i] * numbers[i+1]);
+}
+
+console.log(numbers2); 
