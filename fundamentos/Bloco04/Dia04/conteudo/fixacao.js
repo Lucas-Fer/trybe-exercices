@@ -37,25 +37,37 @@ for(let values in car){
   console.log(values, car[values]);
 }*/
 
-a = 10;
-b = 20;
 
-function sum(a, b) {
+
+function som(a,b){
   return a + b;
 }
+let soma = som(20,10);
+console.log(soma);
 
 function sub(a, b) {
   return a - b;
 }
+let subt = sub(30,10);
+console.log(subt)
+
+let subtracao = sub(10,20);
+console.log(subtracao);
 
 function div(a, b) {
   return a / b;
 }
+let divisao = div(10,20);
+console.log(divisao);
 
 function multi(a, b) {
   return a * b;
 }
+let multiplicacao = multi(10,20);
+console.log(multiplicacao);
 
 function mod(a, b) {
   return a % b;
 }
+let modulo = mod(10,20);
+console.log(modulo);
