@@ -13,7 +13,7 @@ console.log("Anos em que " + player.name + " foi campeã de melhor do mundo:");
 console.log(player.bestInTheWorld + " < :Sendo a melhor do mundo 6 vezes.");
 console.log("");
 console.log("A jogadora possui " + player.medals.golden + " medalhas de ouro e " + player.medals.silver + " medalhas de prata");*/
-
+/*
 let names = {
   person1: 'João',
   person2: 'Maria',
@@ -35,4 +35,27 @@ let car = {
 for(let values in car){
   
   console.log(values, car[values]);
+}*/
+
+a = 10;
+b = 20;
+
+function sum(a, b) {
+  return a + b;
+}
+
+function sub(a, b) {
+  return a - b;
+}
+
+function div(a, b) {
+  return a / b;
+}
+
+function multi(a, b) {
+  return a * b;
+}
+
+function mod(a, b) {
+  return a % b;
 }
