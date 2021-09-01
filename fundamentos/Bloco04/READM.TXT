@@ -1,0 +1,26 @@
+Nesse bloco fui introduzido ao JavaScript, podendo ser capaz de implementar a lógica nas páginas.
+
+No primeiro dia fui capaz de:
+
+.Escrever códigos em JavaScript que usam variáveis, constantes e tipos primitivos;
+.Utilizar conceitos da linguagem como a tipagem dinâmica e operadores lógicos/aritméticos/de atribuição no meu código;
+.Criar códigos que usam estruturas condicionais, como o if/else .
+
+No segundo dia fui capaz de:
+
+.Manipular arrays (listas);
+.Utilizar o comando for ;
+.Utilizar o comando For/Of
+
+No terceiro dia fui capaz de:
+
+.Quebrar grandes problemas em pequenos;
+.Utilizar a lógica de programação na resolução de problemas.
+
+No quarto dia fui capaz de:
+
+.Manipular objetos;
+.Utilizar o comando for/in ;
+.Utilizar funções para organizar e estruturar o meu código;
+
+
