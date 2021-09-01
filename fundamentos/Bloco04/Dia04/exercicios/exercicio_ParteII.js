@@ -39,11 +39,12 @@ function menorIndice(numbers){
   return indiceMenor;
 }
 console.log(menorIndice([1,2,-3,6,7]));*/
-
+/*
 function biggerWord(strings){
   // usar um laço de repetição for
   // contar a quantidade de caractere com lenght
   //definir que a maior frase é o indice 0 de do array strings para comparar
+  
 let maiorFrase = strings[0];
   for(let indice in strings){
 
@@ -53,4 +54,35 @@ let maiorFrase = strings[0];
   }
   return maiorFrase;
 }
-console.log(biggerWord(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+console.log(biggerWord(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));*/
+/*
+function maisRepetido(numeros) {
+  let contRepetido = 0;
+  let contNumero = 0;
+  let indexNumeroRepetido = 0;
+  for (let index in numeros) {
+    let verificaNumero = numeros[index];
+    for (let index2 in numeros) {
+      if (verificaNumero === numeros[index2]) {
+        contNumero += 1;
+      }
+    }
+    if (contNumero > contRepetido) {
+      contRepetido = contNumero;
+      indexNumeroRepetido = index;
+    }
+    contNumero = 0;
+  }
+  return numeros[indexNumeroRepetido];
+}
+console.log(maisRepetido([2, 3, 2, 5, 8, 2, 3]));*/
+
+/*
+function somaTodosNumeros(numeros) {
+  let total = 0;
+  for (let index = 1; index <= numeros; index += 1) {
+    total = total + index;
+  }
+  return total;
+}
+console.log(somaTodosNumeros(5)); //15*/
