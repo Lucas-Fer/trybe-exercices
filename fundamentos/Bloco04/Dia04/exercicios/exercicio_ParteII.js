@@ -24,7 +24,7 @@ function indiceDoMaior(numeros) {
 }
 
 console.log(indiceDoMaior([2, 3, 6, 7, 10, 1])); //4*/
-
+/*
 function menorIndice(numbers){
   //pecorrer em um laço de repetição o array de numeros
   //definir uma variavel menorINdice que sera 0
@@ -38,4 +38,19 @@ function menorIndice(numbers){
   }
   return indiceMenor;
 }
-console.log(menorIndice([1,2,-3,6,7]));
+console.log(menorIndice([1,2,-3,6,7]));*/
+
+function biggerWord(strings){
+  // usar um laço de repetição for
+  // contar a quantidade de caractere com lenght
+  //definir que a maior frase é o indice 0 de do array strings para comparar
+let maiorFrase = strings[0];
+  for(let indice in strings){
+
+    if(maiorFrase.length < strings[indice].length){
+      maiorFrase = strings[indice];
+    }
+  }
+  return maiorFrase;
+}
+console.log(biggerWord(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
