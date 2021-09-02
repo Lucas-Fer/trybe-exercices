@@ -5,3 +5,15 @@ Parte I:
 2 - Agora recupere o segundo parágrafo e use sua criatividade para alterá-lo.
 
 3 - Por fim, recupere o subtítulo e altere-o também.
+
+Parte II:
+
+1 - Adicione uma classe igual para os dois parágrafos.
+
+2 - Recupere os seus parágrafos via código JavaScript , 
+
+3 - usando a função getElementsByClassName ;
+
+4 - Altere algum estilo do primeiro deles.
+
+5 - Recupere o subtítulo e altere a cor dele usando a  função getElementsByTagName .

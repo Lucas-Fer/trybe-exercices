@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html>
   <body>
@@ -24,6 +25,25 @@
       const subtitle = document.getElementById("subtitle");
       subtitle.innerText = "Temporadas";
       subtitle
+    </script>
+  </body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p class="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p class="paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraphs = document.getElementsByClassName("paragraph");
+      paragraphs[0].innerText="Alterando o primeiro parágrafo";
+      paragraphs[0].style.color = "red";
+      
+      document.getElementById("subtitle").style.color = "blue";
     </script>
   </body>
 </html>
