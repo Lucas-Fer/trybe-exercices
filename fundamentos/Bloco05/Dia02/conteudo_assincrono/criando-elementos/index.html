@@ -38,8 +38,17 @@
    sonOfSon.id="terceiroFilhoDoElementoOndeVoceEsta"
    let elementAtual = document.querySelector("#elementoOndeVoceEsta");
    elementAtual.appendChild(sonOfSon);
-   console.log(elementAtual);
-
+   console.log(elementAtual); 
+   
+   //questão 3
+   let sonOfSonOfSon = document.createElement("section");
+   sonOfSonOfSon.id="filhoDoPrimeiroFilhoDoFilhp"; 
+   let firstSonOfSOn = document.querySelector("#primeiroFilhoDoFilho");
+   firstSonOfSOn.appendChild(sonOfSonOfSon);
+   console.log(firstSonOfSOn);
+   //questão 4
+   //ir para o pai("elementoOndeVoceEsta") e ir para o proximo irmão("terceiroFilho")
+   console.log(firstSonOfSOn.parentElement.nextElementSibling);
   </script>  
 </body>
 </html>
