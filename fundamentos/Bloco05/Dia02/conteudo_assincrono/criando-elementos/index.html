@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+  </main>
+  <script>
+   //questão 1
+   
+   //crio uma var para armazenar o elemento(TAG) que desejo criar(section)
+   let brotherElement = document.createElement("section")
+   //criei um ID para a var com o elemento criado
+   brotherElement.id="irmaoElementoOndeVoceEsta";
+   // crio uma var para armazenar os elementos da classe pai
+   fatherElement = document.querySelector("#pai");
+   //para criar um irmao do elementoOndeVoceESta devo criar um filho a partir da classe pai, pela lógica
+   //acrescento o irmao como se fosse filho do pai, logo é irmão do elementoOndeVoceEsta 
+   fatherElement.appendChild(brotherElement);
+   console.log(fatherElement);
+  </script>  
+</body>
+</html>
