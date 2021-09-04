@@ -61,6 +61,8 @@
       let body = document.querySelector("body");
       let h1 = document.createElement("h1");
       body.appendChild(h1).innerText="Exercício 5.2 - JavaScript DOM";
+      //alteração 1
+      h1.className="title";
 
       //questão 2
       let main = document.createElement("main");
@@ -113,6 +115,9 @@
         let tagsH3 = document.createElement('h3');
         tagsH3.innerText="Parágrafo" + " " + index;
         main.appendChild(tagsH3);
+        //alteração 2
+        tagsH3.className="description";
+        
       }
     </script>
   </body>
