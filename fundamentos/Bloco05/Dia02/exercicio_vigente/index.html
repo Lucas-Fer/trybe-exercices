@@ -73,6 +73,8 @@
       let section = document.createElement("section");
       main.appendChild(section);
       section.className="center-content";
+      //alteração 5
+      section.parentElement.style.backgroundColor="green";
       
       //questão 4
       let p = document.createElement("p");
@@ -110,10 +112,19 @@
         let itemList =numbers[index];
         let li = document.createElement('li');
         li.innerText=itemList;
-        listaOrdenada.appendChild(li);
-
+        listaOrdenada.appendChild(li);  
+        //alteração 6
+        if(li.innerText.includes('Nove')){
+          listaOrdenada.removeChild(li);
+    
+        }//alteração 6
+        if(li.innerText.includes('Dez')){
+          listaOrdenada.removeChild(li);
+    
+        }
       }
-
+    
+      
       //questão 9
       for (let index = 1; index <=3; index+=1) {
         let tagsH3 = document.createElement('h3');
