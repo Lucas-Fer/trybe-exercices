@@ -50,3 +50,13 @@ function createDays(){
   };
 };
 createDays();
+
+function btnHolidays() {
+
+  const fatherButton = document.querySelector('.buttons-container');
+  elementButton = document.createElement('button');
+  elementButton.id='btn-holiday';
+  textButton = document.createTextNode('Feriados');
+  
+  fatherButton.appendChild(elementButton).appendChild(textButton);
+}btnHolidays()
