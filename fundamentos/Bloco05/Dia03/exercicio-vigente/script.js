@@ -90,8 +90,17 @@ function disableColor(){
 function events() {
   elementButton.addEventListener('mousedown', eventButtonHolidays);
   elementButton.addEventListener('mouseup', disableColor);
-  
 }
+
+function fridayBtn() {
+  const fatherButton = document.querySelector('.buttons-container');
+  elementButton = document.createElement('button');
+  elementButton.id='btn-friday';
+  textButton = document.createTextNode('Sexta-Feira');
+  
+  fatherButton.appendChild(elementButton).appendChild(textButton);
+}fridayBtn();
+
 events();
 
 
