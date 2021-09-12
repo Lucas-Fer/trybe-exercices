@@ -126,11 +126,21 @@ function disableEventButtonFriday(){
     
   }
 }
+
+function zoomEffect (event){
+  event.target.style.fontSize="40px";
+}
+
+function disableZoomEffect(event) {
+  event.target.style.fontSize='20px';
+}
 function events() {
   elementButton.addEventListener('mousedown', eventButtonHolidays);
   elementButton.addEventListener('mouseup', disableColor);
   elementButton2.addEventListener('mousedown', eventButtonFriday);
   elementButton2.addEventListener('mouseup', disableEventButtonFriday);
+  days.addEventListener('mouseover', zoomEffect);
+  days.addEventListener('mouseout', disableZoomEffect);
 }
 events();
 
