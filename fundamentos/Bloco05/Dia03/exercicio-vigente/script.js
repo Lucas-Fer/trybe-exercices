@@ -10,7 +10,17 @@ function createDaysOfTheWeek() {
     // criar a TAG li
     const dayListItem = document.createElement('li');
     // acrescentar na const com a TAG li os dias
-    dayListItem.innerHTML = days;
+    dayListItem.innerHTML = days; const textFridays = document.querySelectorAll('.friday');
+  
+    const fridays = [4,11,18,25];
+    for (let i = 0; i < textFridays.length; i+=1) {
+      let indexFriday = textFridays[i];
+      for (let x = 0; x < fridays.length; x+=1) {
+        let indexDayOfFridays = fridays[x];
+        
+      }
+      
+    }
     // a classe pai, receberá como filha os dias em forma de list item
     weekDaysList.appendChild(dayListItem);
   };
@@ -87,20 +97,42 @@ function disableColor(){
 
 }
 
+function fridayBtn() {
+  const fatherButton2 = document.querySelector('.buttons-container');
+  elementButton2 = document.createElement('button');
+  elementButton2.id='btn-friday';
+  textButton = document.createTextNode('Sexta-Feira');
+  
+  fatherButton2.appendChild(elementButton2).appendChild(textButton);
+}fridayBtn();
+
+function eventButtonFriday(){
+  const textFridays = document.querySelectorAll('.friday');
+  
+  for (let i = 0; i < textFridays.length; i+=1) {
+    let indexFriday = textFridays[i]
+    indexFriday.innerText='SEXTOU!! :d';
+  }
+}
+
+function disableEventButtonFriday(){
+  const textFridays = document.querySelectorAll('.friday');
+  
+  const fridays = [4,11,18,25];
+  for (let i = 0; i < textFridays.length; i+=1) {
+
+    let indexFriday = textFridays[i];
+    indexFriday.innerHTML=fridays[i];
+    
+  }
+}
 function events() {
   elementButton.addEventListener('mousedown', eventButtonHolidays);
   elementButton.addEventListener('mouseup', disableColor);
-}
-
-function fridayBtn() {
-  const fatherButton = document.querySelector('.buttons-container');
-  elementButton = document.createElement('button');
-  elementButton.id='btn-friday';
-  textButton = document.createTextNode('Sexta-Feira');
+  elementButton2.addEventListener('mousedown', eventButtonFriday);
+  elementButton2.addEventListener('mouseup', disableEventButtonFriday);
   
-  fatherButton.appendChild(elementButton).appendChild(textButton);
-}fridayBtn();
-
+}
 events();
 
 
