@@ -25,6 +25,7 @@ function createDays(){
   //armazenar os feriados
   const holidays = [24,25,31];
   const fridays = [4,11,18,25];
+  const holidayAndFriday = [25];
   // const para armazenar a futura classe pai de li
   const fatherDayList = document.getElementById('days');
 
@@ -36,21 +37,28 @@ function createDays(){
     fatherDayList.appendChild(dayList);
     // for in para pegar os dias de feriado e comparar com os dias(days)
     for (const iterator in holidays) {
-      if(holidays[iterator]=== days){
-        
-        dayList.className='day holiday'
+      let holidayIndex = holidays[iterator];
+
+      if(holidayIndex=== days){
+      dayList.className='day holiday'
       }
-    }
-    // for in para pegar os dias de sexta e comparar com os dias (days)
-    for (const i in fridays){
-      if(fridays[i] === days){
-        dayList.className='day friday';
+      // for in para pegar os dias de sexta e comparar com os dias (days)
+      for (const i in fridays){
+      let fridayIndex = fridays[i];
+      if(fridayIndex === days){
+      dayList.className='day friday';
+        } 
+      }
+      // for in para pegar o dia de sexta que também é dia de feriado e comparar com os dias (days)
+      for (const i in holidayAndFriday) {
+        if(holidayAndFriday[i] === days){
+          dayList.className='day holiday friday';
+        }
       }
     }
   };
-};
-createDays();
-
+};createDays();
+//--------------------------------------------------------------
 function btnHolidays() {
 
   const fatherButton = document.querySelector('.buttons-container');
@@ -59,4 +67,31 @@ function btnHolidays() {
   textButton = document.createTextNode('Feriados');
   
   fatherButton.appendChild(elementButton).appendChild(textButton);
-}btnHolidays()
+}btnHolidays();
+//--------------------------------------------------------
+
+function eventButtonHolidays(){
+  const classHoliday = document.querySelectorAll('.holiday');
+  for (let index = 0; index < classHoliday.length; index+=1) {
+    let classHolidayIndex = classHoliday[index];
+    classHolidayIndex.style.backgroundColor='green'; 
+     }
+
+}
+function disableColor(){
+  const classHoliday = document.querySelectorAll('.holiday');
+  for (let index = 0; index < classHoliday.length; index+=1) {
+    let classHolidayIndex = classHoliday[index];
+    classHolidayIndex.style.backgroundColor='rgb(238,238,238)'; 
+     }
+
+}
+
+function events() {
+  elementButton.addEventListener('mousedown', eventButtonHolidays);
+  elementButton.addEventListener('mouseup', disableColor);
+  
+}
+events();
+
+
