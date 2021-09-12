@@ -131,7 +131,6 @@ function events() {
   elementButton.addEventListener('mouseup', disableColor);
   elementButton2.addEventListener('mousedown', eventButtonFriday);
   elementButton2.addEventListener('mouseup', disableEventButtonFriday);
-  
 }
 events();
 
