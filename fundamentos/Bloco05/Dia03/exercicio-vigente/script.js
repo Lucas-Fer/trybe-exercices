@@ -138,9 +138,38 @@ function disableZoomEffect(event) {
 function addTask() {
   const classFather = document.querySelector('.my-tasks');
   const tagSpan = document.createElement('span');
-  classFather.appendChild(tagSpan).innerText='kkkkkkkkk';
-
-}addTask();
+  
+  classFather.appendChild(tagSpan).innerText='Pegar pesado nos estudos';
+  
+  }addTask();
+  
+  function addNewTask() {
+    const inputButton = document.querySelector('#btn-add');
+    const listTask = document.querySelector('.task-list');
+    const textInput = document.querySelector('#task-input');
+  
+    inputButton.addEventListener('click', function(){
+      if(textInput.value.length > 0){
+        let newLi = document.createElement('li');
+        newLi.innerHTML = textInput.value;
+        
+        listTask.appendChild(newLi);
+        textInput.value='';
+      } else {
+        alert('Digite uma frase!');
+      }
+    })
+    textInput.addEventListener('keyup', function(event) {
+      if (event.keyCode === 13 && textInput.value.length > 0) {
+        let newLi = document.createElement('li');
+        newLi.innerText = textInput.value;
+  
+        listTask.appendChild(newLi);
+        textInput.value = '';
+      }
+    });
+  };
+  addNewTask();
 
 function colorLegend() {
   const classFather = document.querySelector('.my-tasks');
@@ -164,6 +193,16 @@ function taskUnselected(event) {
   
 }
 
+function paint(event) {
+  // para pintar eu capturo o background color da classe com selected
+  
+  const color = document.querySelector('.selected').style.backgroundColor;
+  event.target.style.color=color;
+
+}
+
+
+
 function events() {
   elementButton.addEventListener('mousedown', eventButtonHolidays);
   elementButton.addEventListener('mouseup', disableColor);
@@ -173,8 +212,19 @@ function events() {
   days.addEventListener('mouseout', disableZoomEffect);
   
   const legend = document.querySelector('.task');
+  const dayPainter = document.querySelectorAll('.day');
+  const button = document.querySelector('#btn-add');
+  
+
   legend.addEventListener('click', taskSelected);
   legend.addEventListener('dblclick', taskUnselected);
+  
+  for (let i = 0; i < dayPainter.length; i+=1) {
+    dayPainter[i].addEventListener('click', paint);
+  }
+  
+
+
 }
 events();
 
