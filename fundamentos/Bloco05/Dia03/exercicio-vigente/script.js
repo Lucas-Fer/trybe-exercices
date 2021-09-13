@@ -134,6 +134,14 @@ function zoomEffect (event){
 function disableZoomEffect(event) {
   event.target.style.fontSize='20px';
 }
+
+function addTask() {
+  const classFather = document.querySelector('.my-tasks');
+  const tagSpan = document.createElement('span');
+  classFather.appendChild(tagSpan).innerText='kkkkkkkkk';
+
+}addTask();
+
 function events() {
   elementButton.addEventListener('mousedown', eventButtonHolidays);
   elementButton.addEventListener('mouseup', disableColor);
