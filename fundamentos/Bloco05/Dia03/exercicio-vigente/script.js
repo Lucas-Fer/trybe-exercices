@@ -84,7 +84,7 @@ function eventButtonHolidays(){
   const classHoliday = document.querySelectorAll('.holiday');
   for (let index = 0; index < classHoliday.length; index+=1) {
     let classHolidayIndex = classHoliday[index];
-    classHolidayIndex.style.backgroundColor='green'; 
+    classHolidayIndex.style.backgroundColor='rgb(59, 192, 99)'; 
      }
 
 }
@@ -142,6 +142,28 @@ function addTask() {
 
 }addTask();
 
+function colorLegend() {
+  const classFather = document.querySelector('.my-tasks');
+  const element = document.createElement('div');
+  element.className='task';
+  const color = 'red';
+
+  element.style.backgroundColor=color;
+  classFather.appendChild(element);
+
+}colorLegend();
+
+function taskSelected(event) {
+
+  event.target.className='task selected';
+  
+}
+function taskUnselected(event) {
+  
+  event.target.classList.remove('selected');
+  
+}
+
 function events() {
   elementButton.addEventListener('mousedown', eventButtonHolidays);
   elementButton.addEventListener('mouseup', disableColor);
@@ -149,6 +171,10 @@ function events() {
   elementButton2.addEventListener('mouseup', disableEventButtonFriday);
   days.addEventListener('mouseover', zoomEffect);
   days.addEventListener('mouseout', disableZoomEffect);
+  
+  const legend = document.querySelector('.task');
+  legend.addEventListener('click', taskSelected);
+  legend.addEventListener('dblclick', taskUnselected);
 }
 events();
 
