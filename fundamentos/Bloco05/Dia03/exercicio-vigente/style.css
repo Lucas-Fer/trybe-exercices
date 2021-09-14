@@ -6,6 +6,7 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #eee;
+  
 }
 
 button {
@@ -25,6 +26,7 @@ button {
 
 #days {
   margin: 0;
+  padding: 10px;
 }
 
 #days li {
@@ -35,6 +37,7 @@ button {
   text-align: center;
   vertical-align: middle;
   width: 13.6%;
+  
 }
 
 .input-container {

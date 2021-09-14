@@ -10,7 +10,17 @@ function createDaysOfTheWeek() {
     // criar a TAG li
     const dayListItem = document.createElement('li');
     // acrescentar na const com a TAG li os dias
-    dayListItem.innerHTML = days;
+    dayListItem.innerHTML = days; const textFridays = document.querySelectorAll('.friday');
+  
+    const fridays = [4,11,18,25];
+    for (let i = 0; i < textFridays.length; i+=1) {
+      let indexFriday = textFridays[i];
+      for (let x = 0; x < fridays.length; x+=1) {
+        let indexDayOfFridays = fridays[x];
+        
+      }
+      
+    }
     // a classe pai, receberá como filha os dias em forma de list item
     weekDaysList.appendChild(dayListItem);
   };
@@ -74,7 +84,7 @@ function eventButtonHolidays(){
   const classHoliday = document.querySelectorAll('.holiday');
   for (let index = 0; index < classHoliday.length; index+=1) {
     let classHolidayIndex = classHoliday[index];
-    classHolidayIndex.style.backgroundColor='green'; 
+    classHolidayIndex.style.backgroundColor='rgb(59, 192, 99)'; 
      }
 
 }
@@ -87,10 +97,134 @@ function disableColor(){
 
 }
 
+function fridayBtn() {
+  const fatherButton2 = document.querySelector('.buttons-container');
+  elementButton2 = document.createElement('button');
+  elementButton2.id='btn-friday';
+  textButton = document.createTextNode('Sexta-Feira');
+  
+  fatherButton2.appendChild(elementButton2).appendChild(textButton);
+}fridayBtn();
+
+function eventButtonFriday(){
+  const textFridays = document.querySelectorAll('.friday');
+  
+  for (let i = 0; i < textFridays.length; i+=1) {
+    let indexFriday = textFridays[i]
+    indexFriday.innerText='SEXTOU!! :d';
+  }
+}
+
+function disableEventButtonFriday(){
+  const textFridays = document.querySelectorAll('.friday');
+  
+  const fridays = [4,11,18,25];
+  for (let i = 0; i < textFridays.length; i+=1) {
+
+    let indexFriday = textFridays[i];
+    indexFriday.innerHTML=fridays[i];
+    
+  }
+}
+
+function zoomEffect (event){
+  event.target.style.fontSize="40px";
+}
+
+function disableZoomEffect(event) {
+  event.target.style.fontSize='20px';
+}
+
+function addTask() {
+  const classFather = document.querySelector('.my-tasks');
+  const tagSpan = document.createElement('span');
+  
+  classFather.appendChild(tagSpan).innerText='Pegar pesado nos estudos';
+  
+  }addTask();
+  
+  function addNewTask() {
+    const inputButton = document.querySelector('#btn-add');
+    const listTask = document.querySelector('.task-list');
+    const textInput = document.querySelector('#task-input');
+  
+    inputButton.addEventListener('click', function(){
+      if(textInput.value.length > 0){
+        let newLi = document.createElement('li');
+        newLi.innerHTML = textInput.value;
+        
+        listTask.appendChild(newLi);
+        textInput.value='';
+      } else {
+        alert('Digite uma frase!');
+      }
+    })
+    textInput.addEventListener('keyup', function(event) {
+      if (event.keyCode === 13 && textInput.value.length > 0) {
+        let newLi = document.createElement('li');
+        newLi.innerText = textInput.value;
+  
+        listTask.appendChild(newLi);
+        textInput.value = '';
+      }
+    });
+  };
+  addNewTask();
+
+function colorLegend() {
+  const classFather = document.querySelector('.my-tasks');
+  const element = document.createElement('div');
+  element.className='task';
+  const color = 'red';
+
+  element.style.backgroundColor=color;
+  classFather.appendChild(element);
+
+}colorLegend();
+
+function taskSelected(event) {
+
+  event.target.className='task selected';
+  
+}
+function taskUnselected(event) {
+  
+  event.target.classList.remove('selected');
+  
+}
+
+function paint(event) {
+  // para pintar eu capturo o background color da classe com selected
+  
+  const color = document.querySelector('.selected').style.backgroundColor;
+  event.target.style.color=color;
+
+}
+
+
+
 function events() {
   elementButton.addEventListener('mousedown', eventButtonHolidays);
   elementButton.addEventListener('mouseup', disableColor);
+  elementButton2.addEventListener('mousedown', eventButtonFriday);
+  elementButton2.addEventListener('mouseup', disableEventButtonFriday);
+  days.addEventListener('mouseover', zoomEffect);
+  days.addEventListener('mouseout', disableZoomEffect);
   
+  const legend = document.querySelector('.task');
+  const dayPainter = document.querySelectorAll('.day');
+  const button = document.querySelector('#btn-add');
+  
+
+  legend.addEventListener('click', taskSelected);
+  legend.addEventListener('dblclick', taskUnselected);
+  
+  for (let i = 0; i < dayPainter.length; i+=1) {
+    dayPainter[i].addEventListener('click', paint);
+  }
+  
+
+
 }
 events();
 
