@@ -1,0 +1,23 @@
+
+.test {
+  background-color:blueviolet;
+}
+header {
+  background-color:lavender;
+  border: 2px solid purple;
+
+}
+
+main {
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: lavender;
+  border: 2px solid purple;
+}
+.container {
+  padding: 10px;
+}
+
+
+
