@@ -4,9 +4,30 @@
   box-sizing: border-box;
   font-family: 'Ubuntu';
 }
+#header {
+  display: flex;
+  border: 2px solid black;
+  justify-content: space-around;
+  background-color: #2a9d8f;
+  height: 100px;
+}
 
+.title {
+  align-self: center;
+  color: white
+}
+
+.nav {
+  flex-direction: column;
+  align-self: center;
+
+}
 .header-img {
-  width: 70px;
+  width:95px;
+  height: 95px;
+  align-self: center;
+  border-radius: 20px;
+
 }
 
 .gallery-img {
