@@ -8,7 +8,7 @@
   display: flex;
   border: 2px solid black;
   justify-content: space-around;
-  background-color: #2a9d8f;
+  background-color: #1d3557;
   height: 100px;
 }
 
@@ -20,15 +20,26 @@
 .nav {
   flex-direction: column;
   align-self: center;
-
+  color: white;
 }
+
 .header-img {
   width:95px;
   height: 95px;
   align-self: center;
   border-radius: 20px;
-
 }
+
+#paragraph {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+#p {
+  font-size: large;
+}
+
 
 .gallery-img {
   width: 150px;
@@ -38,3 +49,4 @@
   width: 25px;
   margin-left: 10px;
 }
+
