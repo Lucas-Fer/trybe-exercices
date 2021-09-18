@@ -32,7 +32,7 @@
 }
 
 body {
-  background-color:#457b9d;
+  background-color:#a0c4ff;
 }
 
 #paragraph {
@@ -69,9 +69,24 @@ main {
   width: 150px;
   height: 150px;
 }
+#footer {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  height: 330px;
+}
+
+#img-footer, #img-footer img.newfooter {
+  width: 500px;
+  height: 200px;
+}
 
 .social-img {
-  width: 25px;
-  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
 }
 
