@@ -66,3 +66,34 @@ html {
     justify-content:space-between;
   }
 }
+
+@media screen and (min-width:1600px) {
+  body {
+    background-color: burlywood;
+  }
+  #index {
+    justify-content: space-between;
+  }
+  header{
+    justify-content: space-around;
+  }
+
+
+  .lis li {
+    background-color: coral;
+    padding: 10px;
+    margin-right: 5px;
+  }
+  .cut {
+    display: flex;
+    max-width: 200px;
+    padding: 10px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
