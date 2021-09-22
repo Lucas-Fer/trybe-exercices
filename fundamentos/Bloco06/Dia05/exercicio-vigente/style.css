@@ -1,99 +1,139 @@
-html {
-  box-sizing: border-box;
+#container {
+  margin: 0 auto;
+  width: 100%;
+  background: #fff;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+
+#header {
+  background: #ccc;
+  padding: 20px;
+}
+
+#header h1 {
   margin: 0;
-  font-family: 'Ubuntu';
-}
-@media screen and (min-width:213px) {
-  body {
-    background-color:darkcyan;
-  }
-
-  h1 {
-    font-size: 1.5em;
-    text-align: center;
-  }
-
-  h2, h3 {
-    margin: 10px 10px;
-    font-size: 1.3em;
-  }
-
-  li {
-    padding: 5px;
-    list-style: none;
-    min-width: 100%;
-  }
-
-  p {
-    
-    text-align: justify;
-    font-size: medium;
-    padding-bottom: 40px;
-    padding-right: 8px;
-  }
 }
 
-@media screen and (min-width:800px) {
-  body {
-    background-color:darkseagreen;
-  }
-
-  header {
-    display: flex;
-    margin-bottom: 30px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  header .lis {
-    display: flex;    
-  }
-
-  .lis li {
-    text-align: center;
-    max-width: 24px;
-    background-color: darkslategray;
-    border: 1px solid black;
-    border-radius: 5px;
-  }
-
-  #index {
-    background-color: darkgrey;
-    display: flex;
-    justify-content:space-between;
-  }
+#navigation {
+  float: left;
+  width: 100%;
+  background: #333;
 }
 
-@media screen and (min-width:1600px) {
+#navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+#navigation ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+#navigation li a {
+  display: block;
+  float: left;
+  padding: 5px 10px;
+  color: #fff;
+  text-decoration: none;
+  border-right: 1px solid #fff;
+}
+
+#navigation li a:hover {
+  background: #383;
+}
+
+#content-container {
+  float: left;
+  width: 100%;
+  background: #FFF;
+}
+
+#content {
+  clear: left;
+  float: left;
+  width: 60%;
+  padding: 20px 0;
+  margin: 0 0 0 4%;
+  display: inline;
+}
+
+#content h2 {
+  margin: 0;
+}
+
+#aside {
+  float: right;
+  width: 33%;
+  padding: 20px 0;
+  margin: 0 3% 0 0;
+  display: inline;
+}
+
+#aside h3 {
+  margin: 0;
+}
+
+#footer {
+  clear: left;
+  background: #ccc;
+  text-align: right;
+  padding: 20px;
+  height: 1%;
+}
+@media print {
+  #header,
+  #navigation,
+  #footer {
+    display: none;
+  }
+  /* tarefa 1*/  
+  #content {
+  float:none;
+  clear:none; 
+  }
+
+  /* tarefa 1*/ 
+  #aside {
+    float: none;
+  }
+
+}
+
+@media screen and (min-width:240px) {
+  #aside {
+    display:none;
+  }
   body {
-    background-color: burlywood;
-  }
-  #index {
-    justify-content: space-between;
-  }
-  header{
-    justify-content: space-around;
+    padding: 0;
   }
 
-
-  .lis li {
-    background-color: coral;
-    padding: 10px;
-    margin-right: 5px;
+  #header {
+    font-size: 1em;
+    position:fixed;
   }
-  .cut {
-    display: flex;
-    max-width: 200px;
-    padding: 10px;
-  }
-
-  footer {
+  #navigation ul {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    margin-top: 90px;
   }
+  #navigation ul a {
+    border: none;
+    padding-left: 10px;
+  }
+  #content img {
+    width: 200px 
+  }
+}
+
+@media screen and (min-width:360px) {
+  #content {
+    float:none;
+    clear:none; 
+    }
+  
+    /* tarefa 1*/ 
+    #aside {
+      float: none;
+    }
 }
