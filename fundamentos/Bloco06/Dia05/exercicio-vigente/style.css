@@ -1,96 +1,99 @@
-body {
-  color: blacks;
+html {
+  box-sizing: border-box;
 }
-h1 {
-  font-size: 3em;
-}
-
-.one {
-  display: flex;
-  flex-direction: column;
-
-  margin-left: 10%;
-  width: 80%;
-}
-
-p, figcaption {
-  font-size: 1.3em;
-
-}
-h2 {
-  font-size: 2.5em;
-}
-
-img {
-    max-width: 100%;
-}
-
-figure {
-    margin: 0;
-    margin-bottom: 40px;
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  font-family: 'Ubuntu';
 }
 @media screen and (min-width:213px) {
-
   body {
-    background-color: darkcyan;
+    background-color:darkcyan;
   }
 
   h1 {
-  font-size: 1.5em;
-  text-align: center;
-  flex-direction: row;
+    font-size: 1.5em;
+    text-align: center;
   }
 
-  p, figcaption {
-    font-size: 1.2em;
-    text-align:justify;
+  h2, h3 {
+    margin: 10px 10px;
+    font-size: 1.3em;
   }
 
-  h2 {
-    font-size: 1.4em;
+  li {
+    padding: 5px;
+    list-style: none;
+    min-width: 100%;
   }
 
-  img {
-    margin-bottom: 5px;
-    margin-right: 5px;
-  }
-  .coluna {
-    display: flex;
-    max-width: 90%;
-  }
-
-  .coluna2 {
-    max-width: 45%;
-  }
-
-  figure, figcaption {
-    margin-bottom: 20px;
+  p {
+    
+    text-align: justify;
+    font-size: medium;
+    padding-bottom: 40px;
+    padding-right: 8px;
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:800px) {
   body {
-    background-color: darkgoldenrod;
-  }
-  h1 {
-    font-size: 3em;
-  }
-  
-  p, figcaption {
-    font-size: 1.3em;
-  
-  }
-  h2 {
-    font-size: 2.5em;
-  }
-  
-  img {
-      max-width: 100%;
+    background-color:darkseagreen;
   }
 
-  figure {
-      margin: 0;
-      margin-bottom: 40px;
-      margin-right: 10px;
+  header {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .lis {
+    display: flex;    
+  }
+
+  .lis li {
+    text-align: center;
+    max-width: 24px;
+    background-color: darkslategray;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  #index {
+    background-color: darkgrey;
+    display: flex;
+    justify-content:space-between;
+  }
+}
+
+@media screen and (min-width:1600px) {
+  body {
+    background-color: burlywood;
+  }
+  #index {
+    justify-content: space-between;
+  }
+  header{
+    justify-content: space-around;
+  }
+
+
+  .lis li {
+    background-color: coral;
+    padding: 10px;
+    margin-right: 5px;
+  }
+  .cut {
+    display: flex;
+    max-width: 200px;
+    padding: 10px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
