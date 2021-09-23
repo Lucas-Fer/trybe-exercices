@@ -68,3 +68,36 @@ console.log(biggerWord2("Antônio foi no banheiro e não sabemos o que aconteceu
 //---------------------------------------------------------------------------------------/
 
 
+//Questão 3 feita no arquivo index.html
+
+// Parte II - Questão 4
+
+const array = ["Android", "iOS", "Architecture", "Teach", "Run"];
+// resposta diretamente do gabarito no Bloco, pois ainda não entendi a questão
+function buildSkillsPhrase (paramOne) {
+    const fun1 = paramInner => (
+      `Tryber ${paramInner} aqui!
+
+      Tudo bem?`
+    );
+
+    let result = `${fun1(paramOne)}
+
+    Minhas cinco principais habilidades são:`;
+
+    array.forEach((skill, index) =>
+    result = `${result}
+
+    - ${skill}`);
+
+    result = `
+    ${result}
+
+    #goTrybe
+    `;
+
+    return result;
+}
+
+console.log(buildSkillsPhrase("Lucas"));
+// ----------------------------------------------------------/

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <span id="contador">Vezes que o botão foi clicado</span>
+  <button id="button"> Clique</button>
+</body>
+<script>
+  const cont = document.querySelector('#contador');
+  const button = document.querySelector('#button');
+  let contador = 0;
+  button.addEventListener('click', () => {
+    cont.innerText = contador+=1;
+  });
+</script>
+</html>
