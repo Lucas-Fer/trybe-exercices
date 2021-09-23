@@ -33,7 +33,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ✔️] 4-2: _JavaScript - Array e loop For_
 - [ ✔️] 4-3: _JavaScript - LÃ³gica de ProgramaÃ§Ã£o e Algoritmos_
 - [ ✔️] 4-4: _JavaScript - Objetos e funÃ§Ãµes_
-- [ ✔️] 4-5: _[Projeto - Playground Functions]()_
+- [ ✔️] 4-5: _[Projeto - Playground Functions]
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
 
@@ -41,20 +41,20 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ✔️] 5-2: _JavaScript - Trabalhando com elementos_
 - [ v] 5-3: _JavaScript - Eventos_
 - [ ✔️] 5-4: _JavaScript - Web Storage_
-- [ ] 5-5: _[Projeto - Meme Generator]()_
-- [ ✔️] 5-6: _[Projeto - Arte com Pixels]()_
-- [ ] 5-7: _[Projeto - Lista de tarefas]()_
-- [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
-- [ ] 5-7: _[Projeto - Carta Misteriosa]()_
+- [ ✔️] 5-5: _[Projeto - Meme Generator]()_
+- [ ✔️] 5-6: _[Projeto - Arte com Pixels](https://lucas-fer.github.io/pixel-arts-project/)_
+- [ ✔️] 5-7: _[Projeto - Lista de tarefas](https://lucas-fer.github.io/ToDo-list/)_
+- [ ✔️] 5-7: _[Projeto - Adivinhe a Cor]()_
+- [ ✔️] 5-7: _[Projeto - Carta Misteriosa]()_
 
 ##### Bloco 6: HTML & CSS avanÃ§ado
 
-- [ ] 6-1: _HTML & CSS - Forms_
-- [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
-- [ ] 6-3: _CSS Flexbox - Part 1_
-- [ ] 6-4: _CSS Flexbox - Part 2_
-- [ ] 6-5: _CSS Responsivo - Mobile First_
-- [ ] 6-6: _[Projeto - PÃ¡gina inicial do Facebook]()_
+- [ ✔️] 6-1: _HTML & CSS - Forms_
+- [ ✔️] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
+- [ ✔️] 6-3: _CSS Flexbox - Part 1_
+- [ ✔️] 6-4: _CSS Flexbox - Part 2_
+- [ ✔️] 6-5: _CSS Responsivo - Mobile First_
+- [ ✔️] 6-6: _[Projeto - PÃ¡gina inicial do Facebook]()_
 
 ##### Bloco 7: JavaScript ES6 & Testes UnitÃ¡rios
 
