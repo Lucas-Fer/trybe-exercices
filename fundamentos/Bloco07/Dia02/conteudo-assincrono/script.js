@@ -1,62 +1,51 @@
-const coolestTvShow = {
-  name: "BoJack Horseman",
-  genre: "adult animation",
-  createdBy: "Raphael Bob-Waksberg",
-  favoriteCharacter: "Princess Carolyn",
-  quote: "Princess Carolyn always lands on her feet.",
-  seasons: 6,
-};
+// Desenvolva uma função que receba um array como parâmetro e
+// retorne um array com os números pares
 
-// for (const property in coolestTvShow) {
-//   console.log(property);
-// }
-
-console.log(Object.keys(coolestTvShow));
-
-// [ 'name', 'genre', 'createdBy', 'favoriteCharacter', 'quote', 'seasons' ]
-
-var obj = { 4: 'a', 1: 'b', 2: 'c' };
-console.log(Object.keys(obj));
-
-const student1 = {
-  Html: 'Muito Bom',
-  Css: 'Bom',
-  JavaScript: 'Ótimo',
-  SoftSkills: 'Ótimo',
-};
-
-const student2 = {
-  Html: 'Bom',
-  Css: 'Ótimo',
-  JavaScript: 'Ruim',
-  SoftSkills: 'Ótimo',
-  Git: 'Bom', // chave adicionada
-};
-
-const student1 = {
-  Html: 'Muito Bom',
-  Css: 'Bom',
-  JavaScript: 'Ótimo',
-  SoftSkills: 'Ótimo',
-};
-
-const student2 = {
-  Html: 'Bom',
-  Css: 'Ótimo',
-  JavaScript: 'Ruim',
-  SoftSkills: 'Ótimo',
-  Git: 'Bom', // chave adicionada
-};
-
-const listSkills = (student) => {
-  const arrayOfSkills = Object.keys(student);
-  for(index in arrayOfSkills){
-    console.log(`${arrayOfSkills[index]}, Nível: ${student[arrayOfSkills[index]]}`);
+let arr = [ 1,2,3,4,5]
+let arrayPar = [];
+function getEvenNumbers(array) {
+  for (let i = 0; i < array.length; i += 1) {
+    if (array[i] % 2 === 0) {
+      arrayPar.push(array[i]);
+    } 
+    
   }
-};
+  return arrayPar;
+}
 
-console.log('Estudante 1');
-listSkills(student1);
+console.log( getEvenNumbers(arr) ); // [2,4]
 
-console.log('Estudante 2');
-listSkills(student2);
+// Desenvolva uma função que receba um array de objetos com cidades e estados e retorne um array contendo o nome da cidade e do estado concatenados.
+
+// Ex:
+const citiesAndStates = [
+  {
+    city: 'Belo Horizonte',
+    state: 'Minas Gerais',
+  },
+  {
+    city: 'Salvador',
+    state: 'Bahia',
+  },
+  {
+    city: 'Porto Alegre',
+    state: 'Rio Grande do Sul',
+  },
+  {
+    city: 'Manaus',
+    state: 'Amazonas',
+  }
+]
+
+// Resultado esperado
+//['Belo Horizonte - Minas Gerais', 'Salvador - Bahia', 'Porto Alegre - Rio Grande do Sul', 'Manaus - Amazonas']
+let a = [];
+function buildCitiesArray(array) {
+  for (let i = 0; i < array.length; i += 1) {
+    const objectIndex = Object.values(array[i]);
+    a +=`${objectIndex}`;
+    
+  }
+  return a;
+}
+console.log(buildCitiesArray(citiesAndStates));
