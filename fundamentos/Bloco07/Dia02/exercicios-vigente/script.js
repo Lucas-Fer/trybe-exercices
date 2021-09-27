@@ -57,3 +57,49 @@ const orderModifier = (order) => {
 }
 
 orderModifier(order);
+
+const lesson1 = {
+  materia: 'Matemática',
+  numeroEstudantes: 20,
+  professor: 'Maria Clara',
+  turno: 'manhã',
+};
+
+const lesson2 = {
+  materia: 'História',
+  numeroEstudantes: 20,
+  professor: 'Carlos',
+};
+
+const lesson3 = {
+  materia: 'Matemática',
+  numeroEstudantes: 10,
+  professor: 'Maria Clara',
+  turno: 'noite',
+};
+// questao1
+const nigthTurn = (object, key, value) => {
+  object[key] = value;
+};
+nigthTurn(lesson2, 'turno', 'noite');
+console.log(lesson2);
+
+//qustao2
+const keysList = (object) => Object.keys(object);
+console.log(keysList(lesson3));
+
+//questao3
+const objLength = (object) => Object.keys(object).length;
+console.log("Tamanho do objeto: " + objLength(lesson3));
+
+//questão4
+const valuesList = (object) => Object.values(object);
+console.log('Valores do objeto: ' + valuesList(lesson3));
+
+//questão 5
+
+let allLessons = {
+
+}
+Object.assign(allLessons, {lesson1, lesson2, lesson3});
+console.log(allLessons);
