@@ -103,3 +103,44 @@ let allLessons = {
 }
 Object.assign(allLessons, {lesson1, lesson2, lesson3});
 console.log(allLessons);
+
+
+//questão6
+const totalStudents = (objAll) => {
+  let contador = 0;
+  // armazenar as keys
+  const arrayKeys = Object.keys(objAll);
+  for (let i in arrayKeys) {
+                 // captura o o numero em cada indice (i) de cada key do  objeto All lessons
+    contador += objAll[arrayKeys[i]].numeroEstudantes
+  }
+  return contador;
+}
+console.log("Valores de allLessons: " + totalStudents(allLessons));
+
+//questão7
+const getValueByNumber = (object, indice) => {
+  for (indice in object) {
+   return object[indice];
+  }
+} 
+console.log("Valor do indice: " + getValueByNumber(lesson1, 0));
+
+//questão8
+const verifyParValue = (object, key, value) => {
+  const arrObjc = Object.entries(object);
+  
+  for (let i in arrObjc) {
+    if (arrObjc[i][0] === key && arrObjc[i][1] === value) {
+      result = true;
+    } else {
+      result = false;
+    }
+  }
+  return result;
+};
+
+console.log(verifyParValue(lesson3, 'turno', 'noite'));
+// Output: true,
+console.log(verifyParValue(lesson3, 'materia', 'Maria Clara'));
+// Output: false
