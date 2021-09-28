@@ -54,7 +54,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ✔️] 6-3: _CSS Flexbox - Part 1_
 - [ ✔️] 6-4: _CSS Flexbox - Part 2_
 - [ ✔️] 6-5: _CSS Responsivo - Mobile First_
-- [ ✔️] 6-6: _[Projeto - PÃ¡gina inicial do Facebook]()_
+- [ ✔️] 6-6: _[Projeto - Formulário para entrar na TRYBEWARTS](https://lucas-fer.github.io/project-trybewarts/)_
 
 ##### Bloco 7: JavaScript ES6 & Testes UnitÃ¡rios
 
