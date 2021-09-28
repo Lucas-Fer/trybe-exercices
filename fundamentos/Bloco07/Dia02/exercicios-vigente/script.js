@@ -144,3 +144,17 @@ console.log(verifyParValue(lesson3, 'turno', 'noite'));
 // Output: true,
 console.log(verifyParValue(lesson3, 'materia', 'Maria Clara'));
 // Output: false
+
+// questão bônus
+const verifyStudentOfMath = (object) => {
+  let contador = 0;
+  const arrayValues = Object.keys(object);
+
+  for (const i in arrayValues) {
+    if (object[arrayValues[i]].materia === 'Matemática') {
+      contador += object[arrayValues[i]].numeroEstudantes;
+    }
+  }
+  return contador;
+}
+console.log("Valores de estudantes de matemática: " + verifyStudentOfMath(allLessons));
