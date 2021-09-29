@@ -16,5 +16,19 @@ function myRemove(arr, item) {
   return newArr;
 }
 
+function myFizzBuzz(num) {
+  if (num % 3 === 0 && num % 5 === 0) {
+    return 'fizzbuzz';
+  } else if (num % 3 === 0 && typeof num == 'number') {
+    return 'fizz';
+  } else if (num % 5 === 0 && typeof num == 'number') {
+    return 'buzz';
+  } else if (typeof num !== 'number') {
+    return false;
+  } else {
+    return num;
+  }
+}
+
 // implemente seus testes aqui
-module.exports = {sum, myRemove};
+module.exports = {sum, myRemove, myFizzBuzz};
