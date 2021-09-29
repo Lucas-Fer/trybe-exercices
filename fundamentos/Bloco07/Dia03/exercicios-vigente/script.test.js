@@ -1,5 +1,6 @@
-const { it, expect } = require('@jest/globals');
-const {sum} = require('./script');
+
+const { expect } = require('@jest/globals');
+const {sum, myRemove} = require('./script');
 
 describe('The sum of two values', () => {
   it('value of value1 + value2 to equal 3', () => {
@@ -12,5 +13,13 @@ describe('The sum of two values', () => {
 
   it('throw errors', () => {
     expect(() => sum(4, '5')).toThrow('parameters must be numbers');
+  });
+});
+
+describe('Verify array and item', () => {
+  it('return array', () => {
+    expect(myRemove([1,2,3,4], 3)).toEqual([1,2,4]);
+    expect(myRemove([1,2,3,4], 3)).not.toEqual([1,2,3,4]);
+    expect(myRemove([1,2,3,4], 5)).toEqual([1,2,3,4]);
   });
 });
