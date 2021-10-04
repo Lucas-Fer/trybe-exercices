@@ -28,5 +28,6 @@
 - Entender a diferença entre elementos de bloco e elementos inline .
 
 <h3>Dia05: Projeto: </h3>
+
 - [ ✔️] 3-5: _[Projeto - HTML & CSS](https://lucas-fer.github.io/semantic-html/)_
 
