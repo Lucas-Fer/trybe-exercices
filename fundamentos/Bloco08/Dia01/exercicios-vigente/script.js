@@ -2,7 +2,7 @@
 
 const objectName = (name) => {
   // separando o nome, colocando tudo minusculo e colocando o "_"
-  const generateEmail = name.toLowerCase().split(' ').join('_');
+  const generateEmail = `${name.toLowerCase().split(' ').join('_')}@trybe.com`;
   return object = {
     name,
     generateEmail,
@@ -36,3 +36,5 @@ const sorteio = () => {
 
 const result = (numChosen, sorteio) => numChosen === sorteio? 'Acertou':'errou'; 
 console.log("Resultado: " + result(numChosen(), sorteio()));
+
+
