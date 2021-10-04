@@ -38,3 +38,27 @@ const result = (numChosen, sorteio) => numChosen === sorteio? 'Acertou':'errou';
 console.log("Resultado: " + result(numChosen(), sorteio()));
 
 
+
+
+
+
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+
+const verifyAnswers = (right, answers, points) => {
+  let count = 0;
+  for (let i = 0; i < right.length; i += 1) {
+    points = score(right[i], answers[i]);
+    count += points;
+  }
+  return `Resultado: ${count}`;
+}
+
+const score = (correct, input) => {
+  if (correct === input) return 1;
+  if (correct === 'N.A') return 0;
+  return -0.5;
+}
+
+console.log(verifyAnswers(RIGHT_ANSWERS, STUDENT_ANSWERS, score()));
