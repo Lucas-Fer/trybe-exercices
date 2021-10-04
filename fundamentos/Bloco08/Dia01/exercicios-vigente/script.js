@@ -19,3 +19,20 @@ const newEmployees = (callback) => {
 };
 
 console.log(newEmployees(objectName));
+
+
+const numChosen = () => {
+  const numberChosen = Math.floor(Math.random() * 5) + 1;
+  console.log(`O número escolhido foi: ${numberChosen}`);
+  return numberChosen;
+}
+
+const sorteio = () => {
+  // random pega numero de 0 até 1, para arredondar utilizar o floor
+  const numberResult = Math.floor(Math.random() * 5) + 1;
+  console.log(`O número sorteado foi: ${numberResult}`);
+  return numberResult
+} 
+
+const result = (numChosen, sorteio) => numChosen === sorteio? 'Acertou':'errou'; 
+console.log("Resultado: " + result(numChosen(), sorteio()));
