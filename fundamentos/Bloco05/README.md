@@ -1,5 +1,12 @@
-Neste bloco fui capaz de:
+<h1>Bloco 5 - JavaScript: DOM, Eventos e Web Storage</h1>
+
+<h2>Neste bloco fui capaz de:</h2>
+
+<h3>Dia 01:</h3>
+
  .Acessar dados do HTML com o JavaScript através dos seletores do DOM;
+
+<h3>Dia02:<h3>
  .Adicionar e remover elementos HTML da página via JavaScript;
  .Buscar os elementos da página com a propriedade parentNode;
  .Mudar o conteúdo, estilo e outros atributos de elementos HTML a partir de eventos do JavaScript ;
