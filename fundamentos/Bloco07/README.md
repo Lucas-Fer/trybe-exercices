@@ -24,5 +24,7 @@
 - 1.Entender o que são e para que servem testes unitários;
 - 2.Aplicar o conceito de TDD, ou seja, o desenvolvimento orientado a testes;
 - 3.Criar testes unitários a partir do framework Jest .
-
- 
+<hr>
+    Projeto:
+    
+ - [ ✔️] 7-4: _[Projeto - JavaScript Testes UnitÃ¡rios](https://github.com/tryber/sd-016-a-project-js-unit-tests/pull/71)_
