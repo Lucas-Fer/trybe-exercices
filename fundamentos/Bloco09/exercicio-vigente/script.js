@@ -29,7 +29,16 @@ const jupiter = {
 // 1 - Dado o código abaixo, qual a ordem de finalização de execução das linhas comentadas?
 // R: primeiro 'Mars', depois Venus' e por último 'Jupiter'.
 
+// console.log(planetDistanceFromSun(mars));
+// console.log(planetDistanceFromSun(venus));
+// console.log(planetDistanceFromSun(jupiter));
+// ----------------------------------------------------------------------------------------------------
+
+
+// 2 - Agora, dado o código abaixo, qual a ordem de finalização de execução das linhas comentadas?
+// R: 'Mars', 'Jupiter' e 'Vênus'.
+
 console.log(planetDistanceFromSun(mars));
-console.log(planetDistanceFromSun(venus));
-console.log(planetDistanceFromSun(jupiter));
+setTimeout(() => console.log(planetDistanceFromSun(venus)), 3000);
+setTimeout(() => console.log(planetDistanceFromSun(jupiter)), 2000);
 
