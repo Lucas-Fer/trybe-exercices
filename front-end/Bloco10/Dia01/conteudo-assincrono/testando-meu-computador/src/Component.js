@@ -2,11 +2,13 @@ import React, { Component } from "react";
 
 class AboutMe extends Component {
   render() {
+    const learn = 'React';
     return (
-      <div>
+      < div >
         <h1>Lucas Sousa Fernandes</h1>
         <p>Meu primeiro componente em React</p>
-      </div>
+        <p>Estou aprendendo {learn}</p>
+      </div >
     );
   }
 }
