@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class TaskList extends Component {
   render() {
-    const arrayTask = ['Estudar', 'Lazer', 'Compromisso', 'Cuidar dos cachorros'];
+    const arrayTask = ['Estudar', 'Lazer', 'Compromisso', 'Cuidar dos dog'];
 
     return (
       <section>
