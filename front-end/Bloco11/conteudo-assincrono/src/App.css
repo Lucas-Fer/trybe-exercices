@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background-color: #303030;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+
+.display-color {
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 5px;
+
+}
+
+li {
+  list-style: none;
+  margin-bottom: 15px;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+input {
+  font-size: 30px;
+}
+
+.wrapper {
+  margin-top: 20px;
+  max-width: 400px;
+}
+
+img {
+  max-width: 100%;
+  opacity: 60%;
+}
