@@ -1,22 +1,26 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class InputText extends Component {
   render() {
-    const { value, handleChange } = this.props;
+    const { value, getInput } = this.props;
+
     let error = undefined;
-    if (value.length > 27) error = 'Texto muito grande';
-    if (value === '') error = 'Digite algo na caixa de texto'
+    if (value.length > 30) error = 'Texto grande';
     return (
-      <label>
+      <>
         <input
+          type="text"
           value={value}
-          onChange={handleChange}
+          onChange={getInput}
           name="inputText"
-          placeholder="input text"
-          t1ype="text"
         />
-        <span>{error? error : '' }</span>
-      </label>
-    )
+        <span>{error ? error : ''}</span>
+      </>
+    );
   }
+}
+
+InputText.propTypes = {
+  value: PropTypes.string.isRequired,
 }

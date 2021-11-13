@@ -1,70 +1,62 @@
-import React, { Component } from 'react'
-import Options from './Options';
+import React, { Component } from 'react';
 import InputText from './InputText';
-import InputEmail from './InputEmail';
-import TextArea from './TextArea';
-import Checkbox from './Checkbox';
-class Form extends Component {
+import InputCheckbox from './InputCheckbox';
+import InputSelect from './InputSelect';
+
+export default class Form extends Component {
   constructor() {
     super();
 
-    this.handleChange = this.handleChange.bind(this);
-
     this.state = {
       inputText: '',
-      inputEmail: '',
-      options: '',
-      textArea: '',
-      verification: false,
+      inputCheckbox: false,
+      inputSelect: '',
+      formError: true,
     };
+
+    this.getInput = this.getInput.bind(this);
   }
 
-  handleErros() {
-
-  }
-  // desestruturar o target de event.target
-  handleChange({ target }) {
-    // destructuring name de target.name
+  getInput = ({ target }) => {
     const { name } = target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
+
     this.setState({
       [name]: value,
     });
-  }
+  };
+
+  handleErros = () => {
+    const { name } = this.state;
+    const erros = [
+      !name.string,
+    ];
+
+    const istOk = erros.every((error) => error !== true);
+
+    this.setState({
+      formError: !istOk,
+    })
+  };
 
   render() {
+
+    const { getInput } = this;
+    const { inputText, inputCheckbox, inputSelect, formError } = this.state;
+
     return (
       <div>
-        <h1>Estados e React - Tecnologia fantástica ou reagindo a regionalismos?</h1>
-        
-        <form className="form">
 
-          <Options
-            value={this.state.options}
-            handleChange={this.handleChange}
-          />
-        
-          <InputText
-            value={this.state.inputText}
-            handleChange={this.handleChange}
-          />
+        <InputSelect value={inputSelect} getInput={getInput} />
 
-          <InputEmail
-            value={this.state.inputEmail}
-            handleChange={this.handleChange}
-          />
+        <InputText value={inputText} getInput={getInput} />
 
-          <TextArea handleChange={this.handleChange} value={this.state.textArea} />
+        <InputCheckbox value={inputCheckbox} getInput={getInput} />
 
-          <Checkbox 
-            value={this.state.verification}
-            handleChange={this.handleChange}
-          />
-
-        </form>
+        {formError
+          ? <span style={{ color: 'red' }}>Preencha todos os campos</span>
+          : <span style={{ color: 'green' }}>Todos campos foram preenchidos</span>}
       </div>
     );
   }
 }
-
-export default Form;
