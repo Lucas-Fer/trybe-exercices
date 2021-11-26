@@ -26,11 +26,11 @@ describe('Verificando campo de email e botão', () => {
     const inputEmail = screen.getByLabelText('Email');
     const inputButton = screen.getAllByRole('button');
 
-    const EMAIL = 'example@gmail.com'
+    const EMAIL = 'example@gmail.com';
     userEvent.type(inputEmail, EMAIL);
     userEvent.click(inputButton[0]);
     expect(inputEmail).toHaveValue('');
-    expect(emailValue).toHaveTextContent(`Valor: ${EMAIL}`)
+    expect(emailValue).toHaveTextContent(`Valor: ${EMAIL}`);
   });
 
 });
