@@ -1,0 +1,1 @@
+const retornaNumeroAleatorio = () => Math.floor(Math.random() * 100);
