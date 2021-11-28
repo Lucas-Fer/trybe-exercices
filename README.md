@@ -79,17 +79,17 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
-##### Bloco 11: IntroduÃ§Ã£o - React
+##### Bloco 10: Introdução - React
 
-- [ ] 11-1: _'Hello, world!' no React!_
-- [ ] 11-2: _Componentes React_
-- [ ] 11-3: _[Projeto - Movie Cards Library]()_
+- [ ✔️] 11-1: _'Hello, world!' no React!_
+- [ ✔️] 11-2: _Componentes React_
+- [ ✔️] 11-3: _Projeto - Movie Cards Library_
 
-##### Bloco 12: React
+##### Bloco 12: Componentes com estado, eventos e formulários com React
 
-- [ ] 12-1: _Components com estado_
-- [ ] 12-2: _Eventos e formulÃ¡rios no React_
-- [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_
+- [ ✔️] 12-1: _Components com estado e eventos_
+- [ ✔️] 12-2: _Formulários no React_
+- [ ✔️] 12-3: _[Projeto - Tryunfo](https://lucas-fer.github.io/trunfo-game-project/)_
 
 ##### Bloco 13: React
 
