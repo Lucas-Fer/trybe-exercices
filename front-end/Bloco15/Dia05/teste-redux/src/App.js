@@ -8,10 +8,10 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Provider store={store}>
+     
           <ButtonClicks />
           <NumberClicks />
-        </Provider>
+       
       </div>
     );
   }
